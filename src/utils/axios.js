@@ -10,7 +10,7 @@
 import axios from 'axios'
 import { Toast } from 'vant'
 
-axios.defaults.baseURL = process.env.NODE_ENV == 'development' ? '//localhost:28019' : 'localhost:28019'
+axios.defaults.baseURL = process.env.NODE_ENV == 'development' ? '//localhost:28019/api/v1' : 'localhost:28019/api/v1'
 axios.defaults.withCredentials = true
 axios.defaults.headers['X-Requested-With'] = 'XMLHttpRequest'
 axios.defaults.headers['token'] = localStorage.getItem('token') || ''
